@@ -1,21 +1,21 @@
 :root {
-  --text: #5c5668;
-  --text-heading: #0f0d14;
-  --text-muted: #7a7389;
-  --bg: #f3f1f7;
+  --text: #4b4558;
+  --text-heading: #0c0a12;
+  --text-muted: #6b6580;
+  --bg: #f5f3ff;
   --surface: #ffffff;
-  --surface-elevated: #ffffff;
-  --border: #e2dee8;
-  --positive: #0d8a5b;
-  --negative: #c43d4b;
+  --surface-elevated: #faf8ff;
+  --border: #ddd6fe;
+  --positive: #10b981;
+  --negative: #f43f5e;
 
-  --chart-grid: rgba(90, 80, 110, 0.12);
-  --chart-line: #5b4bdb;
-  --chart-bar: #3d8bfd;
-  --chart-slice-1: #5b4bdb;
-  --chart-slice-2: #3d8bfd;
-  --chart-slice-3: #12b8a8;
-  --chart-slice-4: #e8a838;
+  --chart-grid: rgba(124, 58, 237, 0.14);
+  --chart-line: #8b5cf6;
+  --chart-bar: #22d3ee;
+  --chart-slice-1: #a855f7;
+  --chart-slice-2: #38bdf8;
+  --chart-slice-3: #34d399;
+  --chart-slice-4: #fbbf24;
 
   --shadow-sm:
     0 1px 2px rgba(15, 13, 20, 0.06), 0 1px 3px rgba(15, 13, 20, 0.04);
@@ -37,23 +37,23 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #b4adbf;
-    --text-heading: #f4f2f8;
-    --text-muted: #8a8398;
-    --bg: #121016;
-    --surface: #1c1824;
-    --surface-elevated: #252030;
-    --border: #342f3e;
-    --positive: #3dd68c;
-    --negative: #ff7b8a;
+    --text: #c4bdd4;
+    --text-heading: #faf5ff;
+    --text-muted: #9f96b8;
+    --bg: #0f0a18;
+    --surface: #1a1228;
+    --surface-elevated: #251a36;
+    --border: #4c3d6b;
+    --positive: #4ade80;
+    --negative: #fb7185;
 
-    --chart-grid: rgba(255, 255, 255, 0.08);
-    --chart-line: #a599ff;
-    --chart-bar: #6eb6ff;
-    --chart-slice-1: #a599ff;
-    --chart-slice-2: #6eb6ff;
-    --chart-slice-3: #4fd4c8;
-    --chart-slice-4: #f0c56a;
+    --chart-grid: rgba(196, 181, 253, 0.12);
+    --chart-line: #c4b5fd;
+    --chart-bar: #67e8f9;
+    --chart-slice-1: #d8b4fe;
+    --chart-slice-2: #7dd3fc;
+    --chart-slice-3: #6ee7b7;
+    --chart-slice-4: #fcd34d;
 
     --shadow-sm:
       0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.2);
