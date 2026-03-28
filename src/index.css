@@ -1,0 +1,95 @@
+:root {
+  --text: #5c5668;
+  --text-heading: #0f0d14;
+  --text-muted: #7a7389;
+  --bg: #f3f1f7;
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --border: #e2dee8;
+  --positive: #0d8a5b;
+  --negative: #c43d4b;
+
+  --chart-grid: rgba(90, 80, 110, 0.12);
+  --chart-line: #5b4bdb;
+  --chart-bar: #3d8bfd;
+  --chart-slice-1: #5b4bdb;
+  --chart-slice-2: #3d8bfd;
+  --chart-slice-3: #12b8a8;
+  --chart-slice-4: #e8a838;
+
+  --shadow-sm:
+    0 1px 2px rgba(15, 13, 20, 0.06), 0 1px 3px rgba(15, 13, 20, 0.04);
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/145% var(--sans);
+  letter-spacing: 0.01em;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #b4adbf;
+    --text-heading: #f4f2f8;
+    --text-muted: #8a8398;
+    --bg: #121016;
+    --surface: #1c1824;
+    --surface-elevated: #252030;
+    --border: #342f3e;
+    --positive: #3dd68c;
+    --negative: #ff7b8a;
+
+    --chart-grid: rgba(255, 255, 255, 0.08);
+    --chart-line: #a599ff;
+    --chart-bar: #6eb6ff;
+    --chart-slice-1: #a599ff;
+    --chart-slice-2: #6eb6ff;
+    --chart-slice-3: #4fd4c8;
+    --chart-slice-4: #f0c56a;
+
+    --shadow-sm:
+      0 1px 2px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.2);
+
+    color-scheme: dark;
+  }
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100svh;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+p {
+  margin: 0;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border);
+}
