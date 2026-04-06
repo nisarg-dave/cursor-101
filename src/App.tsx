@@ -2,10 +2,12 @@ import {
   categorySales,
   channelMix,
   kpis,
+  ordersByWeek,
   revenueByWeek,
 } from './data/mockMetrics'
 import { CategoryBarChart } from './components/CategoryBarChart'
 import { MixPieChart } from './components/MixPieChart'
+import { OrdersAreaChart } from './components/OrdersAreaChart'
 import { RevenueLineChart } from './components/RevenueLineChart'
 import { StatCard } from './components/StatCard'
 import './App.css'
@@ -37,6 +39,9 @@ function App() {
       <section className="dashboard__charts" aria-label="Charts">
         <div className="dashboard__chart dashboard__chart--wide">
           <RevenueLineChart data={revenueByWeek} />
+        </div>
+        <div className="dashboard__chart dashboard__chart--wide">
+          <OrdersAreaChart data={ordersByWeek} />
         </div>
         <div className="dashboard__chart">
           <CategoryBarChart data={categorySales} />
