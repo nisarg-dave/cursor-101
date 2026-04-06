@@ -64,6 +64,18 @@ export const revenueByWeek: TrendPoint[] = [
   { date: 'Feb 19', value: 55100 },
 ]
 
+/** Weekly order volume — same weeks as revenue (mock). */
+export const ordersByWeek: TrendPoint[] = [
+  { date: 'Jan 1', value: 1180 },
+  { date: 'Jan 8', value: 1240 },
+  { date: 'Jan 15', value: 1210 },
+  { date: 'Jan 22', value: 1380 },
+  { date: 'Jan 29', value: 1310 },
+  { date: 'Feb 5', value: 1420 },
+  { date: 'Feb 12', value: 1510 },
+  { date: 'Feb 19', value: 1460 },
+]
+
 /** Sales by category. */
 export const categorySales: CategoryAmount[] = [
   { name: 'Software', amount: 92000 },

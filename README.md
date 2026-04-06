@@ -23,6 +23,7 @@
     Rules only: Fine if you care most about consistent AI behavior and like the rule picker / alwaysApply / globs. They are designed to be more narrower.
     AGENTS.md only: Fine if you prefer a single doc and rely on @AGENTS.md or project search to pull it in. Designed to be more broader. 
     Both (what you have now): Useful when rules stay short and strict, and AGENTS.md holds the fuller map (commands, tree, workflow). That avoids stuffing everything into one giant rule file.
+18. Cursor also loads skills from Claude and Codex directories: .claude/skills/, .codex/skills/, ~/.claude/skills/, and ~/.codex/skills/. Remember commands = user-triggered shortcuts; skills = reusable expertise the agent can attach when relevant. E.g., skill created and Cursor can match this skill when chat or tasks match that description. Can either @ or use / for this skill
 
 
 
