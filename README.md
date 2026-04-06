@@ -13,6 +13,17 @@
 11. You can queue messages. So don't need to wait for one to complete before proceeding with the next. You can also reorder the queue.
 12. The @ symbol can reference anything from foles, folders, specific functions in code and past chats
 13. Use debug mode when resolving a bug and provide as much context as possible.
+14. Project rules live in .cursor/rules as markdown files and are version-controlled. They are scoped using path patterns, invoked manually, or included based on relevance.
+15. .cursor/rules/project.mdc — A Cursor rule with alwaysApply: true, so it is intended to be included in agent context for this workspace. It states stack, folder habits, styling/chart/accessibility notes, and a short quality bar.
+16. AGENTS.md (repo root) — A project brief for agents: what the app is, npm commands, where files live, and light conventions. It doubles as onboarding text for humans.
+17. Rules are built for injection and targeting (including “only when editing *.ts”). AGENTS.md is closer to a README for agents—broader and easier to read cover-to-cover.
+    Do you need both?
+    No. One well-maintained source can be enough.
+
+    Rules only: Fine if you care most about consistent AI behavior and like the rule picker / alwaysApply / globs. They are designed to be more narrower.
+    AGENTS.md only: Fine if you prefer a single doc and rely on @AGENTS.md or project search to pull it in. Designed to be more broader. 
+    Both (what you have now): Useful when rules stay short and strict, and AGENTS.md holds the fuller map (commands, tree, workflow). That avoids stuffing everything into one giant rule file.
+
 
 
 #### Cursor 3

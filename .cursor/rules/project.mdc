@@ -1,0 +1,18 @@
+---
+description: Core conventions for the Cursor 101 Vite + React dashboard
+alwaysApply: true
+---
+
+# Project conventions
+
+- **Stack**: Vite 8, React 19, TypeScript, Recharts. Prefer functional components and hooks.
+- **Structure**: Put shared mock or static data in `src/data/`. Colocate chart UI in `src/components/` with descriptive names (e.g. `RevenueLineChart`).
+- **Styling**: Prefer existing `App.css` / `index.css` patterns and BEM-like classes already used (`dashboard__*`); avoid inline styles unless a chart API requires it.
+- **Charts**: Keep chart config readable; pass typed data props from `src/data/` or parent state. Preserve `aria-label` on major sections for accessibility.
+- **Quality**: Run `npm run lint` and `npm run build` after non-trivial changes. Do not add dependencies without a clear need.
+
+```tsx
+// Prefer typed props and small presentational components
+type Props = { data: RevenueRow[] }
+export function RevenueLineChart({ data }: Props) { /* ... */ }
+```
