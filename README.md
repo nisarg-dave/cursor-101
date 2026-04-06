@@ -10,3 +10,13 @@
 8. Start new conversations constantly -> to create new context windows -> command + n
 9. When you ask it do something and don't like it there is an undo button to go back to previous checkpoint.
 10. When you open your app in the cursor browser you can edit the css styles of elements
+11. You can queue messages. So don't need to wait for one to complete before proceeding with the next. You can also reorder the queue.
+12. The @ symbol can reference anything from foles, folders, specific functions in code and past chats
+13. Use debug mode when resolving a bug and provide as much context as possible.
+
+
+#### Cursor 3
+1. Cursor 3 has introduced a new agents window which allows you to manage many repos. It allows you to to build with agents across repos and environments, including local, cloud, remote SSH, and more. It also includes browser and terminal access and editing elements in the browser has changed to be more prompt based.
+2. You can now review and commit changes and manage PRs all in this window
+3. You can move an agent to cloud from local and vice versa
+4. Can start a new chat with agent running on local device, cloud or worktree (useful for experimental edits away from main checkout). Commands such as /worktree and /best-of-n seem to only work in original chat window and not here
