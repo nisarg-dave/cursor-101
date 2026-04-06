@@ -26,6 +26,15 @@
 18. Cursor also loads skills from Claude and Codex directories: .claude/skills/, .codex/skills/, ~/.claude/skills/, and ~/.codex/skills/. Remember commands = user-triggered shortcuts; skills = reusable expertise the agent can attach when relevant. E.g., skill created and Cursor can match this skill when chat or tasks match that description. Can either @ or use / for this skill.
 19. Contrast with rules: rules tend to be always-on or file-scoped constraints (“use TypeScript strict,” “match this CSS pattern”). Skills are more task-shaped: “when we’re doing X, follow this workflow.” Contrast with commands: slash commands are usually short, user-triggered prompts; skills are richer and often auto-selected when the task matches the description.
 20. Subagents are separate assistant profiles the main Agent can delegate to. Each runs with its own context, so long searches, shell output, or browser noise mostly stays out of your main thread; the parent only gets a summary back. Cursor also ships built-in subagents (Explore, Bash, Browser) for heavy or noisy work; you don’t configure those. The main Agent decides whether to delegate to subagents (and how many, parallel vs sequential), based on the task, context, and your subagents’ descriptions. You can still prompt it for parallel work. Compared to skills: skills are instructions bundled into the workflow (good for repeatable, single-context playbooks). Subagents are for delegation—isolation, parallel work, or specialist behavior (custom model, readonly, etc.). Docs: use a skill for simple one-shot tasks like “format imports”; use a subagent when you need isolation or multi-step specialist work.
+21. Hooks are scripts Cursor runs at specific points in the agent loop (and some apply to Tab too). They receive JSON on stdin and can send JSON on stdout to allow, deny, or adjust behavior—depending on the hook type.
+
+Typical uses:
+
+After edits — formatters, lint-on-save style flows, audit logs
+Before shell / MCP — gate risky commands, require patterns, audit
+Before read file — block or redact sensitive paths
+Session / stop / subagent — telemetry, retries, logging
+Hooks are not the same as rules/skills: they run real programs (or prompt-based policies) at lifecycle boundaries, not as always-on text context.
 
 
 
